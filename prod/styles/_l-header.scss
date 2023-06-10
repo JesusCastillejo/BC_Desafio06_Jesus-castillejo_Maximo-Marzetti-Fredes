@@ -1,0 +1,108 @@
+@use './h-colors' as c ;
+@use './h-fonts1' as f1 ;
+@use './h-fonts2' as f2 ;
+
+//------------------ Fonts
+
+h1{
+    font-family: f1.$font-family;
+    font-size: f1.$fontSizeh1;
+    font-weight: f1.$fontWeight;
+    line-height: f1.$lineHeight;
+}
+
+p{
+    font-family: f2.$font-family;
+    font-size: f2.$fontSize;
+    font-weight: f2.$fontWeight;
+    line-height: f2.$lineHeight;
+
+}
+
+
+//----------------------------- NAVBAR
+
+.Header .navbar{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.Header .Logo{
+    width: 250px;
+}
+
+.Header .navbar button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: c.$c-white;
+    font-family: f2.$font-family;
+
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+//------------------ Grid Header
+
+.Header{
+    grid-row: 1/2;
+    grid-column: 1/13;
+
+    background-color: c.$c-PaleCyan;
+    background-image: url(../../public/image/bg-hero-desktop.svg) ; 
+    
+}
+
+.Header .build{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 40% 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.Header .build article{ 
+    grid-row: 2/2;
+    grid-column: 1/2;
+}
+
+
+.Header .build picture{
+    grid-row: 2/2;
+    grid-column: 2/3;
+}
+
+.Header .build button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: c.$c-Pink;
+    color: c.$c-white;
+    font-family: f2.$font-family;
+    cursor: pointer;
+    
+
+    border-radius: 40px;
+    width: 250px;
+    height: 50px;
+}
+
+.Header .build button:hover{
+    background-color: c.$c-lightpink;
+    cursor: pointer;
+}
+
+.Header .build div{
+    margin-top: 2rem;
+}

@@ -1,0 +1,113 @@
+@use './h-colors' as c ;
+@use './h-fonts1' as f1 ;
+@use './h-fonts2' as f2 ;
+
+
+//---------------------- Grid main
+
+.Main {
+    grid-row: 2/3;
+    grid-column: 2/12;
+
+
+}
+
+//--------------------- FONTS
+
+h2{
+    font-family: f1.$font-family;
+    font-size: f1.$fontSizeh2;
+    font-weight: f1.$fontWeight;
+    line-height: f1.$lineHeight;
+}
+
+p{
+    font-family: f2.$font-family;
+    font-size: f2.$fontSize;
+    font-weight: f2.$fontWeight;
+    line-height: f2.$lineHeight;
+    color: c.$c-GrayishBlue;
+}
+
+
+//--------------------- Main
+
+
+.Main {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    margin-top: 6rem;
+    gap: 4rem;
+}
+
+.Main .card:nth-child(1){
+    grid-row: 1/2 ;
+    grid-column: auto;
+}
+
+.Main .card:nth-child(2){
+    grid-row: 2/3 ;
+    grid-column: auto;
+}
+
+.Main .card:nth-child(3){
+    grid-row: 3/4 ;
+    grid-column: auto;
+}
+
+.Main .get{
+    grid-row: 4/4 ;
+    grid-column: auto;
+}
+
+.Main .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+
+}
+
+.Main .get{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    
+}
+
+.Main .get article{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: c.$c-white;
+    z-index: 3;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: -105px;
+
+    width: 700px;
+    height: 250px;
+
+}
+.Main .get button{
+    background-color: c.$c-Pink;
+    color: c.$c-white;
+    font-family: f2.$font-family;
+    cursor: pointer;
+
+    border-radius: 40px;
+    width: 250px;
+    height: 50px;
+}
+
+.Main .get button:hover{
+    background-color: c.$c-lightpink;
+    cursor: pointer;
+}
