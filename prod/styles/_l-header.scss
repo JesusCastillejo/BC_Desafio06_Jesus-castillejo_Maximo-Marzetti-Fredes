@@ -1,21 +1,20 @@
 @use './h-colors' as c ;
-@use './h-fonts1' as f1 ;
-@use './h-fonts2' as f2 ;
+@use './h-fonts' as f ;
 
 //------------------ Fonts
 
 h1{
-    font-family: f1.$font-family;
-    font-size: f1.$fontSizeh1;
-    font-weight: f1.$fontWeight;
-    line-height: f1.$lineHeight;
+    font-family: f.$font-family;
+    font-size: f.$fontSizeh1;
+    font-weight: f.$fontWeight;
+    line-height: f.$lineHeight;
 }
 
 p{
-    font-family: f2.$font-family;
-    font-size: f2.$fontSize;
-    font-weight: f2.$fontWeight;
-    line-height: f2.$lineHeight;
+    font-family: f.$font-familyop;
+    font-size: f.$fontSizeop;
+    font-weight: f.$fontWeightop;
+    line-height: f.$lineHeightop;
 
 }
 
@@ -40,7 +39,7 @@ p{
     justify-content: center;
     align-items: center;
     background-color: c.$c-white;
-    font-family: f2.$font-family;
+    font-family: f.$font-familyop;
 
     border-radius: 40px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -89,7 +88,7 @@ p{
     align-items: center;
     background-color: c.$c-Pink;
     color: c.$c-white;
-    font-family: f2.$font-family;
+    font-family: f.$font-familyop;
     cursor: pointer;
     
 

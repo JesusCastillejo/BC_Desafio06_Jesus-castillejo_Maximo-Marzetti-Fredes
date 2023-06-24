@@ -1,5 +1,5 @@
 @use './h-colors' as c ;
-@use './h-fonts2' as f2;
+@use './h-fonts' as f;
 
 
 //---------------- grid footer
@@ -14,10 +14,10 @@
 //-------------------FONT
 
 li{
-    font-family: f2.$font-family;
-    font-size: f2.$fontSize;
-    font-weight: f2.$fontWeight;
-    line-height: f2.$lineHeight;
+    font-family: f.$font-familyop;
+    font-size: f.$fontSizeop;
+    font-weight: f.$fontWeightop;
+    line-height: f.$lineHeightop;
 }
 
 //------------------ Footer

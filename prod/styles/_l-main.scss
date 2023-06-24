@@ -1,6 +1,6 @@
 @use './h-colors' as c ;
-@use './h-fonts1' as f1 ;
-@use './h-fonts2' as f2 ;
+@use './h-fonts' as f ;
+
 
 
 //---------------------- Grid main
@@ -15,17 +15,17 @@
 //--------------------- FONTS
 
 h2{
-    font-family: f1.$font-family;
-    font-size: f1.$fontSizeh2;
-    font-weight: f1.$fontWeight;
-    line-height: f1.$lineHeight;
+    font-family: f.$font-family;
+    font-size: f.$fontSizeh2;
+    font-weight: f.$fontWeight;
+    line-height: f.$lineHeight;
 }
 
 p{
-    font-family: f2.$font-family;
-    font-size: f2.$fontSize;
-    font-weight: f2.$fontWeight;
-    line-height: f2.$lineHeight;
+    font-family: f.$font-familyop;
+    font-size: f.$fontSizeop;
+    font-weight: f.$fontWeightop;
+    line-height: f.$lineHeightop;
     color: c.$c-GrayishBlue;
 }
 
@@ -99,7 +99,7 @@ p{
 .Main .get button{
     background-color: c.$c-Pink;
     color: c.$c-white;
-    font-family: f2.$font-family;
+    font-family: f.$font-familyop;
     cursor: pointer;
 
     border-radius: 40px;
